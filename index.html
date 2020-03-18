@@ -3,12 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Monstr</title>
-    <!-- <script src='js/index.js'></script> -->
-    <script src='js/demo.js'></script>
+    <script src='js/index.js'></script>
+    <!-- <script src='js/demo.js'></script> -->
   </head>
   <body>
     <h1>Monstr Inc.</h1>
-    <div id='create-monster'></div>
+    <div id='create-monster'>
+      <form id='create-monster-form' method='post'>
+        <label for='name' >Name:</label>
+        <input type='text' name='name'>
+        <label for='age'>Age:</label>
+        <input type='text' name='age'>
+        <label for='description'>Description:</label>
+        <input type='text' name='description'>
+        <button type='submit'>Create Monster</button>
+      </form>
+    </div>
     <div id='monster-container'></div>
     <button id="back"><=</button>
     <button id="forward">=></button>
